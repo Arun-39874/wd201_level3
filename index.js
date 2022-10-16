@@ -1,23 +1,23 @@
 const todoList = () => {
-  all = []
+  all = [];
   const add = (todoItem) => {
-    all.push(todoItem)
+    all.push(todoItem);
   }
   const markAsComplete = (index) => {
-    all[index].completed = true
+    all[index].completed = true;
   }
 
   const overdue = () => {
-    return all.filter((item)=> item.dueDate<new Date().today);
+    return all.filter((item)=> item.dueDate < today);
   }
 
   const dueToday = () => {
-    return all.filter((item)=> item.dueDate==new Date().today);
+    return all.filter((item)=> item.dueDate == today);
 
   }
 
   const dueLater = () => {
-    return all.filter((item)=> item.dueDate>new Date().today);
+    return all.filter((item)=> item.dueDate > today);
 
   }
 
